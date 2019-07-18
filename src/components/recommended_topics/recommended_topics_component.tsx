@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/react';
 import { Id as TaskId } from '../../stores/topics';
-import { View, Text } from 'native-base';
+import { View } from 'native-base';
 import { TopicListItem } from '../../selectors/topics/topic_list_item';
 import { TaskListActions } from '../topics/task_list_component';
 import { TaskListComponent, NoTasksRecommendedComponent } from '../topics/task_list_component';
@@ -13,6 +13,7 @@ import {
 } from './call_to_action';
 import { RecommendedIconComponent } from './recommended_icon_component';
 import { buildTopicsListItemsWithHeadings } from '../topics/build_topic_list_items_with_headings';
+import Text from '../scaled_text/scaled_text';
 
 export interface RecommendedTopicsProps {
     readonly hasChosenAnswers: boolean;

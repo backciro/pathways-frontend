@@ -1,7 +1,7 @@
 // tslint:disable:no-class no-this no-expression-statement
 import React from 'react';
 import { ListRenderItemInfo, FlatList } from 'react-native';
-import { View, Text, Icon } from 'native-base';
+import { View, Icon } from 'native-base';
 import { Service } from '../../stores/services';
 import {
     ValidSelectorTopicServices,
@@ -19,6 +19,7 @@ import { ServiceListErrorComponent } from './service_list_error_component';
 import { isErrorSelectorTaskServices } from '../../selectors/services/is_error_selector_task_services';
 import * as constants from '../../application/constants';
 import { LatLong } from '../../stores/manual_user_location';
+import Text from '../scaled_text/scaled_text';
 
 export interface ServiceListProps {
     readonly topic: Topic;

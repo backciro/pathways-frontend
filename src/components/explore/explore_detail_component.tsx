@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/react';
-import { View, Text } from 'native-base';
+import { View } from 'native-base';
 import { ExploreSection } from '../../selectors/explore/types';
 import { RouterProps } from '../../application/routing';
 import { Id as TaskId, AddToSavedListAction, RemoveFromSavedListAction } from '../../stores/topics';
@@ -8,6 +8,7 @@ import { ExploreDetailContentComponent } from './explore_detail_content_componen
 import { TopicListItem } from '../../selectors/topics/topic_list_item';
 import { textStyles, values } from '../../application/styles';
 import { TaskListComponent, NoTasksAddedComponent } from '../topics/task_list_component';
+import Text from '../scaled_text/scaled_text';
 
 export interface ExploreDetailProps {
     readonly section: ExploreSection;

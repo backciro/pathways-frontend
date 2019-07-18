@@ -1,12 +1,13 @@
 import React from 'react';
 import { TouchableOpacity, StyleSheet } from 'react-native';
-import { View, Content, Icon, Text } from 'native-base';
+import { View, Content, Icon } from 'native-base';
 import { ExploreSection } from '../../selectors/explore/types';
 import { colors, values, textStyles, applicationStyles } from '../../application/styles';
 import { Trans } from '@lingui/react';
 import { RouterProps, Routes, goToRouteWithParameter } from '../../application/routing';
 import { getColorForExploreIcon } from './get_color_for_explore_icon';
 import { mapWithIndex } from '../../application/map_with_index';
+import Text from '../scaled_text/scaled_text';
 
 export interface ExploreAllProps {
     readonly sections: ReadonlyArray<ExploreSection>;

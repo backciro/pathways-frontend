@@ -3,7 +3,7 @@ import * as R from 'ramda';
 import { History } from 'history';
 import { Dimensions, Image, FlatList, ListRenderItemInfo } from 'react-native';
 import Modal from 'react-native-modal';
-import { View, Button, Text } from 'native-base';
+import { View, Button } from 'native-base';
 import { Trans } from '@lingui/react';
 import { AnswersMap } from '../../stores/questionnaire';
 import { TopicMap, Id as TaskId, Topic } from '../../stores/topics';
@@ -14,6 +14,7 @@ import { textStyles, colors, values, applicationStyles } from '../../application
 import { arrivalAdvisorGlyphLogo } from '../../application/images';
 import { stripMarkdown } from '../strip_markdown/strip_markdown';
 import { RecommendedIconComponent } from '../recommended_topics/recommended_icon_component';
+import Text from '../scaled_text/scaled_text';
 
 export interface NewTopicsModalProps {
     readonly oldAnswers: AnswersMap;

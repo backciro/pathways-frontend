@@ -1,6 +1,7 @@
 import React from 'react';
-import { Text, View } from 'native-base';
+import { View } from 'native-base';
 import { colors, values } from '../../application/styles';
+import Text from '../scaled_text/scaled_text';
 
 export interface EmptyListProps {
     readonly message: JSX.Element;

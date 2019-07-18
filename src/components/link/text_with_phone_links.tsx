@@ -1,6 +1,6 @@
 // tslint:disable:no-let readonly-array no-expression-statement
 import React from 'react';
-import { Text } from 'native-base';
+import Text from '../scaled_text/scaled_text';
 import { AnalyticsLink } from './link';
 import { phoneNumberRegex } from '../../application/regular_expressions';
 import { mapWithIndex } from '../../application/map_with_index';

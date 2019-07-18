@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text } from 'native-base';
 import { values, textStyles } from '../../application/styles';
+import Text from '../scaled_text/scaled_text';
 
 // tslint:disable-next-line:no-any
 export const ParagraphComponent: React.StatelessComponent = (props: any): JSX.Element => (

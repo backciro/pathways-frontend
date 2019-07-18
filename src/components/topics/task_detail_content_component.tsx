@@ -1,7 +1,7 @@
 import React from 'react';
 import * as R from 'ramda';
 import { Image, Dimensions, Platform } from 'react-native';
-import { View, Text, Icon } from 'native-base';
+import { View, Icon } from 'native-base';
 import { Trans } from '@lingui/react';
 import Markdown, { openUrl } from 'react-native-markdown-renderer';
 import { Topic } from '../../selectors/topics/topic';
@@ -12,6 +12,7 @@ import { arrivalAdvisorGlyphLogo } from '../../application/images';
 import { images as topicImages } from '../../application/topicImages';
 import { RecommendedIconComponent } from '../recommended_topics/recommended_icon_component';
 import { MultiLineButtonComponent } from '../mutiline_button/multiline_button_component';
+import Text from '../scaled_text/scaled_text';
 
 export interface TaskDetailContentProps {
     readonly topic: Topic;

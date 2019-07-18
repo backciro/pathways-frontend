@@ -1,10 +1,11 @@
 import React from 'react';
 import { Trans } from '@lingui/react';
-import { Text, View, Icon } from 'native-base';
+import { View, Icon } from 'native-base';
 import { ServicesErrorType } from '../../sagas/services';
 import { ErrorSelectorTopicServices } from '../../selectors/services/types';
 import { colors, textStyles } from '../../application/styles';
 import { AsyncLocationErrorType } from '../../async/error_types';
+import Text from '../scaled_text/scaled_text';
 
 export interface ServiceListErrorComponentProps {
     readonly error: ErrorSelectorTopicServices;

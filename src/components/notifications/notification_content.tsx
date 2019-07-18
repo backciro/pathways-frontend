@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/react';
-import { Text } from 'native-base';
 import { textStyles } from '../../application/styles';
+import Text from '../scaled_text/scaled_text';
 
 export const taskAddedNotification = (): JSX.Element => {
     return (

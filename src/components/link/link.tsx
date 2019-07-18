@@ -1,7 +1,7 @@
 // tslint:disable:no-expression-statement
 import React from 'react';
 import { Linking } from 'react-native';
-import { Text } from 'native-base';
+import Text from '../scaled_text/scaled_text';
 import { textStyles } from '../../application/styles';
 import { sendLinkPressedEvent } from '../../sagas/analytics/events';
 

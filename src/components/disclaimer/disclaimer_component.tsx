@@ -1,11 +1,12 @@
 import React from 'react';
 import Modal from 'react-native-modal';
 import { Trans } from '@lingui/react';
-import { Content, Text, View } from 'native-base';
+import { Content, View } from 'native-base';
 import { ParagraphComponent } from '../paragraph/paragraph_component';
 import { values, colors, textStyles } from '../../application/styles';
 import { Link } from '../link/link';
 import { CloseButtonComponent } from '../close_button/close_button_component';
+import Text from '../scaled_text/scaled_text';
 
 type Props = {
     readonly isVisible: boolean;

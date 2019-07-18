@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Icon } from 'native-base';
+import { View, Icon } from 'native-base';
 import { values, colors, textStyles } from '../../application/styles';
 import { TopicListItem } from '../../selectors/topics/topic_list_item';
 import { AddToSavedListAction, RemoveFromSavedListAction, Id } from '../../stores/topics';
@@ -8,6 +8,7 @@ import { EmptyComponent } from '../empty_component/empty_component';
 import { stripMarkdown } from '../strip_markdown/strip_markdown';
 import { BookmarkButtonComponent } from '../bookmark_button/bookmark_button_component';
 import { RecommendedIconComponent } from '../recommended_topics/recommended_icon_component';
+import Text from '../scaled_text/scaled_text';
 
 export interface TaskListItemProps {
     readonly topic: TopicListItem;

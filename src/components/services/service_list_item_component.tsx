@@ -3,7 +3,7 @@ import * as R from 'ramda';
 import { textStyles, colors } from '../../application/styles';
 import { Service, PhoneNumber, Address } from '../../stores/services';
 import { View } from 'native-base';
-import { Text, I18nManager } from 'react-native';
+import { I18nManager } from 'react-native';
 import { TextWithPhoneLinks } from '../link/text_with_phone_links';
 import { mapWithIndex } from '../../application/map_with_index';
 import { ExpandableContentComponent } from '../expandable_content/expandable_content_component';
@@ -12,6 +12,7 @@ import { EmptyComponent } from '../empty_component/empty_component';
 import { getLocationTitleFromAddresses } from './get_location_title_from_addresses';
 import { AnalyticsLink } from '../link/link';
 import { buildLinkContext } from '../../sagas/analytics/events';
+import Text from '../scaled_text/scaled_text';
 
 interface ServiceListItemProps {
     readonly service: Service;

@@ -1,11 +1,12 @@
 import React from 'react';
 import * as R from 'ramda';
 import { Trans } from '@lingui/react';
-import { Text, View } from 'native-base';
+import { View } from 'native-base';
 import { TopicListItem } from '../../selectors/topics/topic_list_item';
 import { TaskListActions, NoTasksAddedComponent, TaskListComponent } from '../topics/task_list_component';
 import { RouterProps } from '../../application/routing';
 import { textStyles, colors, values } from '../../application/styles';
+import Text from '../scaled_text/scaled_text';
 
 export interface BookmarkedTopicsProps {
     readonly bookmarkedTopics: ReadonlyArray<TopicListItem>;

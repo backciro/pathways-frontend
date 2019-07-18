@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, Dimensions } from 'react-native';
-import { View, Text, Icon } from 'native-base';
+import { View, Icon } from 'native-base';
 import { ExploreSection } from '../../selectors/explore/types';
 import { textStyles, colors, values } from '../../application/styles';
 import { ExpandableContentComponent } from '../expandable_content/expandable_content_component';
@@ -8,6 +8,7 @@ import { getColorForExploreIcon } from './get_color_for_explore_icon';
 import { SelectableText } from '../selectable_text';
 import { arrivalAdvisorGlyphLogo } from '../../application/images';
 import { Trans } from '@lingui/react';
+import Text from '../scaled_text/scaled_text';
 
 export interface ExploreDetailContentProps {
     readonly section: ExploreSection;

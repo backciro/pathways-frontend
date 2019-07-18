@@ -1,6 +1,6 @@
 import React from 'react';
 import { History } from 'history';
-import { Text, View, Icon, Content } from 'native-base';
+import { View, Icon, Content } from 'native-base';
 import { Trans } from '@lingui/react';
 import { I18nManager, Alert, TouchableOpacity } from 'react-native';
 import { applicationStyles, colors, textStyles, values } from '../../application/styles';
@@ -11,6 +11,7 @@ import { openURL } from '../link/link';
 import { goToRouteWithParameter, Routes } from '../../application/routing';
 import { MultiLineButtonComponent } from '../mutiline_button/multiline_button_component';
 import { LatLong, SetManualUserLocationAction, ClearManualUserLocationAction } from '../../stores/manual_user_location';
+import Text from '../scaled_text/scaled_text';
 
 const settlementWorkerTaskID = 'contact-workers-at-your-local-settlement-agency';
 

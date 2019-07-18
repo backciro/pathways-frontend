@@ -1,7 +1,7 @@
 // tslint:disable:no-class no-this no-expression-statement
 import React from 'react';
 import { I18nManager, Image, Dimensions } from 'react-native';
-import { Button, Content, View, Text, Icon } from 'native-base';
+import { Button, Content, View, Icon } from 'native-base';
 import * as R from 'ramda';
 import { Question as SelectorQuestion } from '../../selectors/questionnaire/question';
 import { Answer as SelectorAnswer } from '../../selectors/questionnaire/answer';
@@ -16,6 +16,7 @@ import { EmptyComponent } from '../empty_component/empty_component';
 import { CloseButtonComponent } from '../close_button/close_button_component';
 import { NewTopicsModalConnectedComponent } from './new_topics_modal_connected_component';
 import { UpdateOldAnswersFromStoreAnswersAction } from '../../stores/questionnaire/actions';
+import Text from '../scaled_text/scaled_text';
 
 export interface QuestionnaireProps {
     readonly activeQuestion: SelectorQuestion;

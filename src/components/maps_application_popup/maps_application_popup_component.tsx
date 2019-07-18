@@ -1,10 +1,11 @@
 // tslint:disable no-class no-this no-expression-statement
 import React from 'react';
-import { View, Text, Icon, Button } from 'native-base';
+import { View, Icon, Button } from 'native-base';
 import { showLocation } from 'react-native-map-link';
 import { textStyles, colors, values, applicationStyles } from '../../application/styles';
 import { sendLinkPressedEvent } from '../../sagas/analytics/events';
 import { I18nManager } from 'react-native';
+import Text from '../scaled_text/scaled_text';
 
 interface MapsApplicationPopupProps {
     readonly latitude: number;

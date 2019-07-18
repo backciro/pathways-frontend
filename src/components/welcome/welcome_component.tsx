@@ -1,7 +1,7 @@
 // tslint:disable:no-expression-statement readonly-keyword
 import React from 'react';
 import { Dimensions, Image, ImageBackground } from 'react-native';
-import { Text, Form, Item, Picker, Icon, View, Button } from 'native-base';
+import { Form, Item, Picker, Icon, View, Button } from 'native-base';
 import { Trans } from '@lingui/react';
 import { LocaleInfo, Locale } from '../../locale';
 import { SetLocale } from '../../stores/locale';
@@ -9,6 +9,7 @@ import { Routes, goToRouteWithoutParameter, goToRouteWithParameter } from '../..
 import { colors, applicationStyles, textStyles } from '../../application/styles';
 import { arrivalAdvisorLogo, landingPhoto, peacegeeksLogo } from '../../application/images';
 import { History } from 'history';
+import Text from '../scaled_text/scaled_text';
 
 export interface WelcomeProps {
     readonly currentLocale: Locale;

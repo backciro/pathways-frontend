@@ -1,13 +1,14 @@
 import React from 'react';
 import { FlatList, ListRenderItemInfo } from 'react-native';
 import { textStyles } from '../../application/styles';
-import { View, Text } from 'native-base';
+import { View } from 'native-base';
 import { AnswerComponent } from './answer_component';
 import { ChooseAnswerAction, Id } from '../../stores/questionnaire';
 import { EmptyComponent } from '../empty_component/empty_component';
 import { Answer as SelectorAnswer } from '../../selectors/questionnaire/answer';
 import { Question as SelectorQuestion } from '../../selectors/questionnaire/question';
 import { Trans } from '@lingui/react';
+import Text from '../scaled_text/scaled_text';
 
 export interface QuestionProps {
     readonly question: SelectorQuestion;

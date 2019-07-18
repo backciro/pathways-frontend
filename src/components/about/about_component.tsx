@@ -1,12 +1,13 @@
 import React from 'react';
 import Modal from 'react-native-modal';
-import { Text, Content, View } from 'native-base';
+import { Content, View } from 'native-base';
 import { ParagraphComponent } from '../paragraph/paragraph_component';
 import { Trans } from '@lingui/react';
 import { values, textStyles, colors } from '../../application/styles';
 import { Link } from '../link/link';
 import { VERSION } from 'react-native-dotenv';
 import { CloseButtonComponent } from '../close_button/close_button_component';
+import Text from '../scaled_text/scaled_text';
 
 type Props = {
     readonly serverVersion: string;

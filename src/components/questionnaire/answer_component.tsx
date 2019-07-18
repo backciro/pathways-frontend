@@ -1,11 +1,11 @@
 import React from 'react';
 import { TouchableOpacity } from 'react-native';
-import { Text } from 'native-base';
 import { ChooseAnswerAction } from '../../stores/questionnaire';
 import { Id } from '../../stores/questionnaire';
 import { colors, values, textStyles } from '../../application/styles';
 import { Answer as SelectorAnswer } from '../../selectors/questionnaire/answer';
 import { Trans } from '@lingui/react';
+import Text from '../scaled_text/scaled_text';
 
 export interface AnswerProps {
     readonly answer: SelectorAnswer;

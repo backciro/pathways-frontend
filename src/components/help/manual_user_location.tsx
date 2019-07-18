@@ -1,11 +1,12 @@
 // tslint:disable:no-class no-expression-statement no-this
 
 import React from 'react';
-import { Text, View } from 'native-base';
+import { View } from 'native-base';
 import { TextInput } from 'react-native';
 import { textStyles } from '../../application/styles';
 import { MultiLineButtonComponent } from '../mutiline_button/multiline_button_component';
 import { HelpComponentProps, HelpComponentActions } from './help_component';
+import Text from '../scaled_text/scaled_text';
 
 type Props = HelpComponentProps & HelpComponentActions;
 

@@ -1,7 +1,7 @@
 // tslint:disable:no-class no-expression-statement no-this
 import React from 'react';
 import { Dimensions, LayoutChangeEvent, Animated, I18nManager, TouchableOpacity, ViewStyle } from 'react-native';
-import { View, Text, Icon } from 'native-base';
+import { View, Icon } from 'native-base';
 import { Trans } from '@lingui/react';
 import { colors, textStyles } from '../../application/styles';
 import { EmptyComponent } from '../empty_component/empty_component';
@@ -10,6 +10,7 @@ import {
     defaultExpandableContentState, isDefaultState,
 } from './expandable_content_states';
 import { values } from '../../application/styles';
+import Text from '../scaled_text/scaled_text';
 
 export interface ExpandableContentProps {
     readonly content: JSX.Element;

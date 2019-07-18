@@ -1,8 +1,9 @@
 import React from 'react';
-import { View, Icon, Text } from 'native-base';
+import { View, Icon } from 'native-base';
 import { getColorForExploreIcon } from '../explore/get_color_for_explore_icon';
 import { textStyles } from '../../application/styles';
 import { Trans } from '@lingui/react';
+import Text from '../scaled_text/scaled_text';
 
 export interface TopicListHeading {
     readonly id: string;

@@ -1,7 +1,7 @@
 // tslint:disable:no-class no-this no-expression-statement
 import React from 'react';
 import { Dimensions, Image } from 'react-native';
-import { View, Text, Button } from 'native-base';
+import { View, Button } from 'native-base';
 import { colors, textStyles, applicationStyles } from '../../application/styles';
 import { onBoardingPhoto } from '../../application/images';
 import { Trans } from '@lingui/react';
@@ -9,6 +9,7 @@ import { EmptyComponent } from '../empty_component/empty_component';
 import { SetOnboardingAction } from '../../stores/onboarding/actions';
 import { History } from 'history';
 import { Routes, goToRouteWithoutParameter, goToRouteWithParameter, MatchParameters } from '../../application/routing';
+import Text from '../scaled_text/scaled_text';
 
 export interface OnBoardingPageProps {
     readonly key: string;

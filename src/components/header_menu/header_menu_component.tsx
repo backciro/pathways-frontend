@@ -1,12 +1,13 @@
 import React from 'react';
 import * as R from 'ramda';
-import { Text, SectionList, SectionBase, TouchableOpacity, StyleSheet, I18nManager } from 'react-native';
+import { SectionList, SectionBase, TouchableOpacity, StyleSheet, I18nManager } from 'react-native';
 import { History } from 'history';
 import { Trans } from '@lingui/react';
 import { LocaleInfo } from '../../locale/types';
 import { Content, View, Icon, Header } from 'native-base';
 import { colors, values, textStyles } from '../../application/styles';
 import { openURL } from '../link/link';
+import Text from '../scaled_text/scaled_text';
 
 type OwnProps = {
     readonly history: History;

@@ -2,10 +2,11 @@ import React from 'react';
 import { History } from 'history';
 import { Dimensions, Image, TouchableOpacity, I18nManager } from 'react-native';
 import { Trans } from '@lingui/react';
-import { View, Text, Button, Icon } from 'native-base';
+import { View, Button, Icon } from 'native-base';
 import { goToRouteWithoutParameter, Routes } from '../../application/routing';
 import { textStyles, applicationStyles, colors, values } from '../../application/styles';
 import { advisor, recommendationBubble } from '../../application/images';
+import Text from '../scaled_text/scaled_text';
 
 type Props = { readonly history: History };
 

@@ -2,7 +2,7 @@
 import React from 'react';
 import { Trans } from '@lingui/react';
 import { History } from 'history';
-import { Text, View } from 'native-base';
+import { View } from 'native-base';
 import { Id as TaskId, ToggleCompletedAction, RemoveFromSavedListAction, AddToSavedListAction } from '../../stores/topics';
 import { textStyles, values } from '../../application/styles';
 import { goToRouteWithParameter } from '../../application/routing';
@@ -11,6 +11,7 @@ import { Routes } from '../../application/routing';
 import { TaskDetailContentComponent } from './task_detail_content_component';
 import { TaskListComponent, NoTasksAddedComponent } from './task_list_component';
 import { sendLinkPressedEvent, buildLinkContext } from '../../sagas/analytics/events';
+import Text from '../scaled_text/scaled_text';
 
 export interface TaskDetailProps {
     readonly topic: Topic;
